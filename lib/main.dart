@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'package:todoo_app/screens/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,19 +11,14 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  
+  get image => null;
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Todoo App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home:Homepage(),
     );
   }
 }
